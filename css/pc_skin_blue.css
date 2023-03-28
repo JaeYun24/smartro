@@ -1,0 +1,20 @@
+/* 스킨테마 - BLUE */
+#header::before{background:#4066EE;}
+.grd_thm{background: #4066EE;}
+.c_thm{color:#4066EE !important;}
+.bg_thm{background:#4066EE !important;}
+.bd_thm{border-color:#4066EE !important;}
+.obd_thm{border-color:rgba(64,102,238,0.3) !important;}
+.lds-ellipsis div{background:#4066EE;}
+.card_list .list_con .slide_dots li.slick-active button{background:#4066EE;}
+.card_list .list_con .slide_dots li.slick-active:last-child button{width:15px;height:15px;background:url('../img/pc/ico_cp_on_bl.png') no-repeat;}
+.agr_all .chk:checked+.chk_label:after{background-color:#4066EE !important;}
+.chk.sm:checked+.chk_label.sm:after{background:url('../img/pc/ico_schecked_bl.png') no-repeat center center;}
+.password_input .number span::after{border-top: 1px solid #4066EE;}
+.password_input .number span.on::after {background:#4066EE;}
+.bx_tab li.on, .tab_cnt li.on{border-color:#4066EE !important;}
+.bx_tab li.on a, .tab_cnt li.on a{color:#4066EE !important;}
+.pg_current{color:#4066EE;}
+.chk.rd+.chk_label.rd:after{border:1px solid #4066EE;}
+.chk.rd:checked+.chk_label.rd:after{border:1px solid #4066EE;color:#4066EE;}
+.right_bar .nation a.on{background:#4066EE;}

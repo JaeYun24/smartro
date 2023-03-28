@@ -1,0 +1,225 @@
+ <!doctype html>
+<html lang="ko" class="pg_simple">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="SmartroPAY" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>SmartroPAY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../font/SpoqaHanSansNeo.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/m_import.css">
+
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	<!-- [s] header -->
+	<header id="header">
+		<h1><a href="index.html"><img src="../img/m/logo.png" alt="SmartroPay"></a><span class="simp bg_thm">간편결제</span></h1>
+		<a href="javascript:history.back();" class="close"><img src="../img/m/ico_close.png" alt="닫기"></a>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<!-- [s] 카드등록 -->
+		<div class="card_info bx_cont card_register">
+			<div class="inner infit">
+				<h2>카드등록</h2>
+				<div class="card_img on" style="background-image:url('../img/m/hd_card.png');">
+					<div class="info">
+						<p class="number"><span>1234</span><span>5678</span><span>1234</span><span>7890</span></p>
+						<p class="date">01/22</p>
+					</div>
+				</div>
+				<ul class="info_form">
+					<li>
+						<label for="cardNum" >카드번호</label>
+						<div class="frm w4 dash">
+							<div class="inp">
+								<input type="text" name="cardNum" id="cardNum_1" value="1234" maxlength="4" placeholder="0000" >
+								<label for="cardNum_1" class="hidden">CARD NUMBER</label>
+							</div>
+							<div class="inp">
+								<input type="text" name="cardNum" id="cardNum_2" value="5678" maxlength="4" placeholder="0000">
+								<label for="cardNum_2" class="hidden">CARD NUMBER</label>
+							</div>
+							<div class="inp">
+								<input type="text" name="cardNum" id="cardNum_3" value="1234" maxlength="4" placeholder="0000">
+								<label for="cardNum_3" class="hidden">CARD NUMBER</label>
+							</div>
+							<div class="inp">
+								<input type="text" name="cardNum" id="cardNum_4" value="7890" maxlength="4" placeholder="0000">
+								<label for="cardNum_4" class="hidden">CARD NUMBER</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<label for="cardEsp" >유효기간</label>
+						<div class="frm w2 wd40 slush">
+							<div class="inp">
+								<input type="text" name="cardEsp" id="cardEsp_1"  value="01" maxlength="2" placeholder="MM" >
+								<label for="cardEsp_1" class="hidden">ESPIRATION</label>
+							</div>
+							<div class="inp">
+								<input type="text" name="cardEsp" id="cardEsp_2" value="22" maxlength="2" placeholder="YY">
+								<label for="cardEsp_2" class="hidden">ESPIRATION</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<label for="cardCvc" >CVC</label>
+						<input type="text" name="cardCvc" id="cardCvc" value="272" maxlength="3" placeholder="뒷면 3자리 숫자" class="input_basic wd30">
+					</li>
+					<li>
+						<label for="cardPw" >카드 비밀번호</label>
+						<input type="password" name="cardPw" id="cardPw"  maxlength="2" placeholder="앞 2자리 숫자" class="input_basic wd20">
+					</li>
+					<li>
+						<label for="cardPw" >카드 별명(선택)</label>
+						<input type="password" name="cardPw" id="cardPw"  placeholder="00자 이내" class="input_basic">
+					</li>
+				</ul><!-- info_form -->
+				<div class="btn_area mt70">
+					<a href="javascript:popupOpen('.layer_cancel');" class="btn_norm">취소</a>
+					<a href="simple_pay_register_on.html" class="btn_norm bg_thm">결제</a>
+				</div><!-- btn_area -->
+			</div><!-- inner -->
+		</div>
+		<!-- [s] 카드등록 -->
+	</section>
+	<!-- [e] container -->
+
+	<div class="cs_ban">스마트로 고객센터 :  02-1666-9114 (평일 09:00~18:00)</div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 공지사항 팝업 -->
+	<div class="ly_content layer_notice">
+		<div class="ly_cont">
+			<div class="layer not_pop infit">
+				<div class="notice_top">
+					<h1>공지사항</h1>
+					<a href="javascript:popupClose('.layer_notice');" class="close"><img src="../img/m/ico_sclose.png" alt="닫기"></a>
+				</div>
+				<!-- [s] 리스트 -->
+				<div class="notice_view">
+					<ul>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);" title="열기">법인/체크/선불/기프트/BC마크가 없는 NON BC카드 무이자 제외</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								신용카드 2021년 6월 무이자 행사 안내 드리오니 업무에 참고 부탁 드립니다.<br><br>
+
+								■ 대상 기간 : 2021년 6월 1일 ~ 2021년 6월 30일<br>
+								■ 내 용<br>
+								▷ 롯데카드 : 2~4개월<br>
+								▷ 신한카드 : 2~6개월<br>
+								▷ 국민카드 : 2~6개월<br>
+								▷ 삼성카드 : 2~6개월<br>
+								▷ 비씨카드 : 2~6개월<br>
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- [e] 리스트 -->
+				<div class="pg_wrap">
+					<span class="pg">
+						<a href="#" class="pg_page pg_start">처음</a>
+						<a href="#" class="pg_page pg_prev">이전</a>
+						<strong class="pg_current">1</strong>
+						<a href="#" class="pg_page">2</a>
+						<a href="#" class="pg_page">3</a>
+						<a href="#" class="pg_page pg_next">다음</a>
+						<a href="#" class="pg_page pg_end">맨끝</a>
+					</span>
+				</div>
+				<div class="btn"><a href="javascript:popupClose('.layer_notice');" class="bg_thm">닫기</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 공지사항 팝업-->
+
+	<!-- [s] 취소 팝업 -->
+	<div class="ly_content layer_cancel">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="cont">
+					<p class="tt">결제를 취소하시겠습니까?</p>
+					<p class="st">결제취소 시 입력하신 정보가<br>모두 초기화됩니다.</p>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:popupClose('.layer_cancel');" class="btn_pop">닫기</a>
+					<a href="index.html" class="btn_pop c_thm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 취소 팝업-->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/m_publish.js"></script>
+<script type="text/javascript" src="../js/ticker.js"></script>
+
+</body>
+</html>

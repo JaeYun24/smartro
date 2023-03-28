@@ -1,0 +1,335 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="SmartroPAY" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>SmartroPAY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../font/SpoqaHanSansNeo.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/m_import.css">
+
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	<!-- [s] header -->
+	<header id="header">
+		<h1><a href="index.html"><img src="../img/m/logo.png" alt="SmartroPay"></a></h1>
+		<a href="javascript:history.back();" class="close"><img src="../img/m/ico_close.png" alt="닫기"></a>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<!-- [s] 상단 타이틀 영역 -->
+		<div class="main_title">
+			<p class="st">(주)스마트로</p>
+			<p class="tit">마카롱 5종 세트</p>
+			<p class="num c_thm">158,000<em>원</em></p>
+		</div>
+		<!-- [e] 상단 타이틀 영역 -->
+		
+		<!-- [s] 공지 슬라이더 -->
+		<div class="notice_slide">
+			<h2 class="obd_thm c_thm">공지</h2>
+			<div class="is_slide" id="newsticker">
+				<ul>
+					<li class="sld"><a href="javascript:popupOpen('.layer_notice');">법인/체크/선불/기프트/BC마크가 없는 NON BC카드 무이자 제외</a></li>
+					<li class="sld"><a href="javascript:popupOpen('.layer_notice');">NON BC카드 무이자 제외</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- [e] 공지 슬라이더 -->
+
+		<!-- [s] 약관동의 -->
+		<div class="agree_wp bx_cont">
+			<div class="inner">
+				<div class="agr_all">
+					<input type="checkbox" name="agree_all" value="" id="agree_all" class="chk" aria-hidden="true">
+					<label for="agree_all" class="chk_label" role="checkbox" aria-checked="false"><span>약관 전체동의</span></label>
+					<a href="javascript:void(0);" title="열기" class="arr_btn b_arr"><img src="../img/m/ico_arr.png" alt="약관목록보기 버튼"></a>
+				</div>
+				<div class="agr_list cont">
+					<ul>
+						<li>
+							<div class="tit">
+								<input type="checkbox" name="agree" value="" id="agree_1" class="chk sm" aria-hidden="true">
+								<label for="agree_1" class="chk_label sm" role="checkbox" aria-checked="false"><span>전자금융거래 이용약관</span></label>
+								<a href="javascript:void(0);" title="열기" class="arr_btn s_arr"><img src="../img/m/ico_sarr.png" alt="전자금융거래약관보기 버튼"></a>
+							</div>
+							<div class="cont">
+								<div>
+								제1조 (목적)
+								본 약관은 주식회사 스마트로(이하 ‘회사’라 합니다)가 제공하는 전자지급결제대행서비스를 이용자가 이용함에 있어 ‘회사’와 ‘이용자’간 권리, 의무 및 ‘이용자’의 이용 절차 등에 관한 사항을 규정하는 것을 그 목적으로 합니다.
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<input type="checkbox" name="agree" value="" id="agree_2" class="chk sm" aria-hidden="true">
+								<label for="agree_2" class="chk_label sm" role="checkbox" aria-checked="false"><span>개인정보 수집/이용안내</span></label>
+								<a href="javascript:void(0);" title="개인정보 수집/이용안내 열기" class="arr_btn s_arr"><img src="../img/m/ico_sarr.png" alt="개인정보 수집/이용안내 버튼"></a>
+							</div>
+							<div class="cont">
+								<div>
+								제1조 (목적)
+								본 약관은 주식회사 스마트로(이하 ‘회사’라 합니다)가 제공하는 전자지급결제대행서비스를 이용자가 이용함에 있어 ‘회사’와 ‘이용자’간 권리, 의무 및 ‘이용자’의 이용 절차 등에 관한 사항을 규정하는 것을 그 목적으로 합니다.
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="tit">
+								<input type="checkbox" name="agree" value="" id="agree_3" class="chk sm" aria-hidden="true">
+								<label for="agree_3" class="chk_label sm" role="checkbox" aria-checked="false"><span>개인정보 제공/위탁안내</span></label>
+								<a href="javascript:void(0);" title="개인정보 제공/위탁안내" class="arr_btn s_arr"><img src="../img/m/ico_sarr.png" alt="개인정보 제공/위탁안내 버튼"></a>
+							</div>
+							<div class="cont">
+								<div>
+								제1조 (목적)
+								본 약관은 주식회사 스마트로(이하 ‘회사’라 합니다)가 제공하는 전자지급결제대행서비스를 이용자가 이용함에 있어 ‘회사’와 ‘이용자’간 권리, 의무 및 ‘이용자’의 이용 절차 등에 관한 사항을 규정하는 것을 그 목적으로 합니다.
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="tit">
+								<input type="checkbox" name="agree" value="" id="agree_4" class="chk sm" aria-hidden="true">
+								<label for="agree_4" class="chk_label sm" role="checkbox" aria-checked="false"><span>고유식별정보 수집/이용안내</span></label>
+								<a href="javascript:void(0);" title="고유식별정보 수집/이용안내" class="arr_btn s_arr"><img src="../img/m/ico_sarr.png" alt="고유식별정보 수집/이용안내 버튼"></a>
+							</div>
+							<div class="cont">
+								<div>
+								제1조 (목적)
+								본 약관은 주식회사 스마트로(이하 ‘회사’라 합니다)가 제공하는 전자지급결제대행서비스를 이용자가 이용함에 있어 ‘회사’와 ‘이용자’간 권리, 의무 및 ‘이용자’의 이용 절차 등에 관한 사항을 규정하는 것을 그 목적으로 합니다.
+								</div>
+							</div>
+						</li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- [e] 약관동의 -->
+
+		<!-- [s] 에스크로 -->
+		<div class="pay_info bx_cont">
+			<div class="inner infit">
+				<h2>구매결정</h2>
+				<div class="info_list">
+					<ul>
+						<li>
+							<b class="tit"><span>회사명</span></b>
+							<div class="cont"><span class="tt">(주)스마트로</span></div>
+						</li>
+						<li>
+							<b class="tit"><span>휴대폰번호</span></b>
+							<div class="cont"><span class="tt">01012345678</span></div>
+						</li>
+						<li>
+							<b class="tit"><span>상품명</span></b>
+							<div class="cont"><span class="tt">마카롱 5종 세트</span></div>
+						</li>
+						<li>
+							<b class="tit"><span>상품금액</span></b>
+							<div class="cont"><span class="tt">158,000원</span></div>
+						</li>
+						<li>
+							<b class="tit"><span>결제방법</span></b>
+							<div class="cont"><span class="tt">신용카드</span></div>
+						</li>
+					</ul>
+				</div><!-- info_list -->
+				<div class="buy_form rd_sel">
+					<div class="radio">
+						<input type="radio" name="buyOpt" value="" id="buyOpt_1" class="chk rd" aria-hidden="true" onchange="setDisplay()">
+						<label for="buyOpt_1" class="chk_label rd" role="radio" aria-checked="false"><span>구매확인<em>(배송된 상품 수령)</em></span></label>
+					</div>
+					<div class="radio">
+						<input type="radio" name="buyOpt" value="" id="buyOpt_2" class="chk rd" aria-hidden="true" onchange="setDisplay()">
+						<label for="buyOpt_2" class="chk_label rd" role="radio" aria-checked="false"><span>구매거절</span></label>
+					</div>
+					<div class="bform" style="display:none;">
+						<ul>
+							<li>
+								<label for="bfBank">은행선택</label>
+								<select name="bfBank" id="bfBank" class="select_basic">
+									<option value="선택">선택</option>
+								</select>
+							</li>
+							<li>
+								<label for="bfName">예금주명</label>
+								<input type="text" name="bfName" id="bfName" class="input_basic">
+							</li>
+							<li>
+								<label for="bfNum">계좌번호</label>
+								<input type="text" name="bfNum" id="bfNum" class="input_basic">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ex_list mt50">
+					<ul>
+						<li>구매하신 상품을 배송받으신 경우 <span class="red">구매확인</span>을 선택해주세요.</li>
+						<li>구매하신 상품을 배송받지 못하신 경우 구매거절을 선택하시고, <br><span class="red">구매거절</span> 사유를 기입하여 주십시오. </li>
+					</ul>
+				</div>
+				<div class="btn_area mt70">
+					<a href="javascript:popupOpen('.layer_cancel');" class="btn_norm">취소</a>
+					<a href="javascript:popupOpen('.layer_confirm');" class="btn_norm bg_thm">다음</a>
+				</div><!-- btn_area -->
+			</div><!-- inner -->
+		</div>
+		<!-- [e] 에스크로 -->
+
+	</section>
+	<!-- [e] container -->
+
+	<div class="adv_ban"><img src="../img/m/img_ad.png" alt="신한카드 최대 6개월 무이자 할부혜택(5만원 이상 결제시)"></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 공지사항 팝업 -->
+	<div class="ly_content layer_notice">
+		<div class="ly_cont">
+			<div class="layer not_pop infit">
+				<div class="notice_top">
+					<h1>공지사항</h1>
+					<a href="javascript:popupClose('.layer_notice');" class="close"><img src="../img/m/ico_sclose.png" alt="닫기"></a>
+				</div>
+				<!-- [s] 리스트 -->
+				<div class="notice_view">
+					<ul>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);" title="열기">법인/체크/선불/기프트/BC마크가 없는 NON BC카드 무이자 제외</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								신용카드 2021년 6월 무이자 행사 안내 드리오니 업무에 참고 부탁 드립니다.<br><br>
+
+								■ 대상 기간 : 2021년 6월 1일 ~ 2021년 6월 30일<br>
+								■ 내 용<br>
+								▷ 롯데카드 : 2~4개월<br>
+								▷ 신한카드 : 2~6개월<br>
+								▷ 국민카드 : 2~6개월<br>
+								▷ 삼성카드 : 2~6개월<br>
+								▷ 비씨카드 : 2~6개월<br>
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+						<li>
+							<div class="tit">
+								<a href="javascript:void(0);"  title="열기">2021년 7월 카드사 별 무이자 할부 프로모션 안내</a>
+								<span class="date">21.07.30</span>
+							</div>
+							<div class="cont">
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.<br>
+								내용입니다.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- [e] 리스트 -->
+				<div class="pg_wrap">
+					<span class="pg">
+						<a href="#" class="pg_page pg_start">처음</a>
+						<a href="#" class="pg_page pg_prev">이전</a>
+						<strong class="pg_current">1</strong>
+						<a href="#" class="pg_page">2</a>
+						<a href="#" class="pg_page">3</a>
+						<a href="#" class="pg_page pg_next">다음</a>
+						<a href="#" class="pg_page pg_end">맨끝</a>
+					</span>
+				</div>
+				<div class="btn"><a href="javascript:popupClose('.layer_notice');" class="bg_thm">닫기</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 공지사항 팝업-->
+
+	<!-- [s] 취소 팝업 -->
+	<div class="ly_content layer_cancel">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="cont">
+					<p class="tt">결제를 취소하시겠습니까?</p>
+					<p class="st">결제취소 시 입력하신 정보가<br>모두 초기화됩니다.</p>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:popupClose('.layer_cancel');" class="btn_pop">닫기</a>
+					<a href="index.html" class="btn_pop c_thm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 취소 팝업-->
+
+	<!-- [s] 구매확정 팝업 -->
+	<div class="ly_content layer_confirm">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="cont">
+					<p class="tt">구매확정</p>
+					<span class="date">2021.06.26</span>
+					<p class="st mt15">구매확정이 완료되었습니다.<br>감사합니다.</p>
+				</div>
+				<div class="btn_area">
+					<a href="javascript:popupClose('.layer_confirm');" class="btn_pop c_thm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 구매확정 팝업-->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/m_publish.js"></script>
+<script type="text/javascript" src="../js/ticker.js"></script>
+
+</body>
+</html>

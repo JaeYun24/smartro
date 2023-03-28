@@ -1,0 +1,241 @@
+ <!doctype html>
+<html lang="ko" class="pg_simple">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="SmartroPAY" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>SmartroPAY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../font/SpoqaHanSansNeo.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/m_import.css">
+
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	<!-- [s] header -->
+	<header id="header">
+		<h1><a href="index.html"><img src="../img/m/logo.png" alt="SmartroPay"></a><span class="simp bg_thm">간편결제</span></h1>
+		<a href="javascript:history.back();" class="close"><img src="../img/m/ico_close.png" alt="닫기"></a>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<!-- [s] 카드리스트 -->
+		<div class="card_list bx_cont">
+			<h2>결제정보 확인 및 선택</h2>
+			<div class="list_con">
+				<a href="javascript:void(0);" class="setting_btn"><img src="../img/m/ico_setting.png" alt="설정"></a>
+				<div class="cd_title">
+					<p class="st">(주)스마트로</p>
+					<p class="tit">마카롱 5종 세트</p>
+					<p class="num c_thm">158,000<em>원</em></p>
+				</div>
+				
+				<div class="card_slide">
+					<div class="sld">
+						<div class="card_img on" style="background-image:url('../img/m/hd_card.png');">
+							<div class="setting">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<a href="javascript:void(0);" class="btn"><img src="../img/m/ico_dot.png" alt="설정"></a>
+							</div>
+						</div>
+						<p class="tit">현대6219</p>
+						<p class="nick">카드별명</p>
+						<select name="month" id="month_1" class="select_basic">
+							<option value="일시불">일시불</option>
+						</select>
+						<label for="month_1" class="hidden"></label>
+					</div>
+					<div class="sld">
+						<div class="card_img on" style="background-image:url('../img/m/hd_card.png');">
+							<div class="setting">
+								<!--<i class="fa fa-star" aria-hidden="true"></i>-->
+								<a href="javascript:void(0);" class="btn"><img src="../img/m/ico_dot.png" alt="설정"></a>
+							</div>
+						</div>
+						<p class="tit">현대6219</p>
+						<p class="nick">카드별명</p>
+						<select name="month" id="month_2" class="select_basic">
+							<option value="일시불">일시불</option>
+						</select>
+						<label for="month_2" class="hidden"></label>
+					</div>
+					<!-- 카드추가 -->
+					<div class="sld">
+						<div class="card_img add">
+							<a href="#">결제카드 추가</a>
+						</div>
+					</div>
+				</div><!-- card_slide -->
+				<div class="slide_dots"></div>
+			</div><!-- list_con -->
+
+			<!-- [s] 30만원이상결제시 인증 -->
+			<div class="card_cert">
+				<div class="inner">
+					<div class="cont">
+						<div class="tit">
+							<b>30만원 이상 결제 시 휴대폰 인증이 필요합니다.</b><br>
+							가입 시 등록하신 휴대폰 번호로 SMS 인증번호를 전송하였습니다.
+						</div>
+						<div class="inp_btn infit">
+							<p class="tt">휴대폰 번호</p>
+							<div class="frm w3 dash">
+								<div class="inp">
+									<input type="text" name="mobNum" id="mobNum_1"  maxlength="3" placeholder="010">
+									<label for="mobNum_1" class="hidden">번호</label>
+								</div>
+								<div class="inp">
+									<input type="text" name="mobNum" id="mobNum_2" maxlength="4" placeholder="0000">
+									<label for="mobNum_2" class="hidden">번호</label>
+								</div>
+								<div class="inp">
+									<input type="text" name="mobNum" id="mobNum_3" maxlength="4" placeholder="0000" >
+									<label for="mobNum_3" class="hidden">번호</label>
+								</div>
+							</div>
+							<button type="button" class="cert_btn">인증번호 전송</button>
+						</div>
+						<div class="inp_btn infit">
+							<div class="frm cert">
+								<input type="text" name="mobCert" id="mobCert" maxlength="4" placeholder="인증번호 입력" >
+								<label for="mobCert" class="hidden">번호</label>
+								<span class="time c_thm">02:40</span>
+							</div>
+							<button type="button" class="cert_btn bd_thm c_thm" >확인</button>
+						</div>
+						<p class="cert_check">인증이 완료되었습니다.</p>
+					</div>
+				</div>
+			</div>
+			<!-- [e] 30만원이상결제시 인증 -->
+			
+			<div class="cd_bot">
+				<div class="inner">
+					<p class="ntxt">결제하실 내용을 확인 후 결제 비밀번호를 입력해 주세요.</p>
+					<button type="button" onclick="location.href='password_input.html'" class="btn_norm bg_thm">결제</button>
+				</div>
+			</div><!-- cd_bot -->
+		</div>
+		<!-- [s] 카드리스트 -->
+	</section>
+	<!-- [e] container -->
+
+	<div class="cs_ban">스마트로 고객센터 :  02-1666-9114 (평일 09:00~18:00)</div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] 서비스설정 셀렉트 -->
+<div class="set_service setting_pop">
+	<div class="cont">
+		<ul>
+			<li><a href="password_input.html">결제 비밀번호 변경</a></li>
+			<li><a href="service_end.html" class="c_thm">서비스 해지</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="btn_norm close">닫기</a>
+	</div>
+	<div class="pp_dim"></div>
+</div>
+<!-- [s] 서비스설정 셀렉트 -->
+
+<!-- [s] 카드설정 셀렉트 -->
+<div class="set_card setting_pop">
+	<div class="cont">
+		<ul>
+			<li><a href="#">대표카드 설정</a></li>
+			<li><a href="card_nick_edit.html">카드별명 수정</a></li>
+			<li><a href="javascript:popupOpen('.layer_del');">카드 삭제</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="btn_norm close">닫기</a>
+	</div>
+	<div class="pp_dim"></div>
+</div>
+<!-- [s] 카드설정 셀렉트 -->
+
+<!-- [s] layer -->
+<div class="layer_wrap active" style="display:block;">
+	<!-- [s] 완료 팝업 -->
+	<div class="ly_content layer_fin" style="display:table;">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="cont">
+					<p class="tt">간편결제 서비스 가입이<br>완료되었습니다.</p>
+					<p class="st">간편결제에 사용하실 카드를<br>등록해주세요.</p>
+				</div>
+				<div class="btn_area">
+					<a href="javascript:popupClose('.layer_fin');" class="btn_pop c_thm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 완료 팝업-->
+
+	<!-- [s] 카드삭제 팝업 -->
+	<div class="ly_content layer_del">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="cont">
+					<p class="tt">현대카드 (6219)</p>
+					<p class="st">결제수단을 삭제하시겠습니까?</p>
+				</div>
+				<div class="btn_area">
+					<a href="javascript:popupClose('.layer_del');" class="btn_pop c_thm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e]카드삭제 팝업-->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/m_publish.js"></script>
+<script type="text/javascript" src="../js/ticker.js"></script>
+<script>
+//카드슬라이드
+$('.card_slide').slick({
+	infinite: false,
+	dots: true,
+	arrows: false,
+	slidesToScroll: 1, 
+	swipeToSlide: true,
+	edgeFriction: 0.25,
+	waitForAnimate:false,
+	appendDots: $(".card_list .slide_dots"),
+	speed:300
+});
+
+$(".setting_btn").on('click', function(){
+	$(".set_service").fadeIn().addClass("open").attr('tabindex','0').focus();;
+});
+
+$(".setting .btn").on('click', function(){
+	$(".set_card").fadeIn().addClass("open").attr('tabindex','0').focus();;
+});
+
+$(".setting_pop .close").on('click', function(){
+	$(".setting_pop").fadeOut().removeClass("open").removeAttr('tabindex');
+});
+</script>
+</body>
+</html>

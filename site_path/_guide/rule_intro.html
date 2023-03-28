@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<title>퍼블리싱 가이드</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="./css/import.css">
+<script src="../js/jquery.min.js"></script>
+
+</head>
+<body class="dv_chrome dv_chrome84 dv_windows dv_windows10 dv_pc">
+<div id="g-wrapper" class="g-convention-wrap">
+	<header id="g-header">
+		<div class="g-header-inner">
+			<h1 class="g-logo"><a href="/">Publishing Guide</a></h1>
+			<nav class="g-lnb">
+				<ul>
+					<li>
+						<a href="../m_index.html" data-aside="g-snbMenu4" >작업진행도</a>
+					</li>
+					<li class="is-current">
+						<a href="rule_intro.html" data-aside="g-snbMenu1" >퍼블리싱가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="g-container">
+		<aside id="g-aside">
+			<div class="g-js-scroll g-aside-scroll mCustomScrollbar _mCS_1">
+				<div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 645.6px;" tabindex="0">
+					<div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+						<nav class="g-snb">
+							<ul class="g-depth1 g-snbMenu1" style="display: block;">
+								<li class="g-node1">
+									<a href="javascript:;">규칙가이드</a>
+									<ul class="g-depth2">
+										<li class="g-node2 is-current"><a href="rule_intro.html">기본정책</a></li>
+										<li class="g-node2"><a href="rule_standard.html">표준규칙</a></li>
+										<li class="g-node2"><a href="rule_code.html">코드규칙</a></li>
+										<li class="g-node2"><a href="rule_name.html">네임규칙</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+						<div class="mCSB_draggerContainer">
+							<div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 0px; display: block; height: 0px;">
+								<div class="mCSB_dragger_bar" style="line-height: 0px;"></div>
+							</div>
+							<div class="mCSB_draggerRail"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<!-- Content -->
+		<article id="g-content" class="">
+			<div class="g-content-header">
+				<div class="g-in-sec">
+					<h1 class="g-h1">기본정책</h1>
+					<small class="g-explain-h1">Publishing Conventions</small>
+				</div>
+			</div>
+			<div class="g-content-body">
+				<!-- section -->
+				<section class="g-section g-in-sec">
+					<div class="g-section-header">
+						<h2 class="g-h2">프로젝트 환경</h2>
+					</div>
+					<div class="g-section-body">
+						<div class="g-tbl-type1">
+							<table>
+								<caption>환경정의</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="align-l">문서 및 버전</th>
+										<td>HTML5, CSS3</td>
+									</tr>
+									<tr>
+										<th scope="row" class="align-l">인코딩</th>
+										<td>UTF-8</td>
+									</tr>
+									<tr>
+										<th scope="row" class="align-l">웹 유형</th>
+										<td>Mobile Web, PC Web</td>
+										<!-- PC Web | Mobile Web | Responsive Web | Mobile Hybrid Web -->
+									</tr>
+									<tr>
+										<th scope="row" class="align-l">Mobile 웹 호환성</th>
+										<td>
+											<div class="g-browser-icons">
+												안드로이드 6.x 이상, IOS 10.x 이상
+											</div>
+											<style type="text/css">
+												.g-browser-icons img {width:30px; height:30px;}
+											</style>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="align-l">해상도 범위</th>
+										<td>
+											<ul>
+												<li>Mobile : 320 ~ 767</li>
+												<li>Tablet : 768 ~ 1024</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="align-l">최적화 기준</th>
+										<td>
+											<ul>
+												<li>Mobile : 320</li>
+												<li>Tablet : 768</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section1 -->
+
+				<!-- section2 -->
+				<section class="g-section g-in-sec">
+					<div class="g-section-header">
+						<h2 class="g-h2">파일/폴더 구조</h2>
+					</div>
+					<div class="g-section-body">
+						<div class="g-tbl-type1">
+							<table>
+								<caption>파일구조</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:30%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>분류 폴더</th>
+										<th>서브 폴더</th>
+										<th>파일 이름</th>
+										<th>파일 설명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>fonts</td>
+										<td></td>
+										<td></td>
+										<td>
+											웹폰트
+										</td>
+									</tr>
+									<tr>
+										<td>css</td>
+										<td></td>
+									  <td>
+											import.css<br>
+											default.css<br>
+											layout.css<br>
+											m_default.css<br>
+											m_layout.css<br>
+											animate.css<br>
+											slick.css<br>
+											skin_blue.css<br>
+											skin_green.css<br>
+											skin_purple.css<br>
+									  </td>
+									  <td>
+										<p>스타일 - CSS 가져오기<br>
+											스타일 - 초기화<br>
+											스타일 - 레이아웃/컨텐츠<br>
+											스타일 - 레이아웃/컨텐츠_태블릿최적화<br>
+											스타일 - 레이아웃/컨텐츠_모바일최적화<br>
+											skin_ - 스킨별 적용
+									    </p>
+									  </td>
+									</tr>
+									<tr>
+										<td>js</td>
+										<td>libs</td>
+									  <td>
+											jquery.min.js<br>
+											jquery-ui.min.js<br>
+											jquery.ui.touch-punch.min
+									    </td>
+										<td>
+											스크립트 - Jquery<br>
+											스크립트 - Jquery Ui <br>
+											스크립트 - 반응형<br>
+											스크립트 - HTML5
+									  </td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>
+											slick.min.js<br>
+											TweenMax.js<br>
+											ticker.js<br>
+											publish.js<br>
+											m_publish.js
+										<td/td>
+										<td>
+											스크립트 - UI 공통<br>
+											스크립트 - 퍼블리싱용
+										</td>
+									</tr>
+									<tr>
+										<td>img</td>
+										<td>&nbsp;</td>
+										<td></td>
+									  <td>
+											m/pc 폴더로 이미지 구분<br></td>
+									</tr>
+									<tr>
+										<td>html</td>
+										<td>
+											index<br>
+											[menus]
+										</td>
+										<td></td>
+										<td>
+											HTML - 메인<br>
+											HTML - 서브페이지
+									  </td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section -->
+
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+	<a href="#" class="g-top" data-role="spy-scroll">TOP</a>	<div class="g-mask is-clickEvent"></div>
+</div>
+
+</body>
+</html>

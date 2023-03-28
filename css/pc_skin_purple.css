@@ -1,0 +1,20 @@
+/* 스킨테마 - PURPLE */
+#header::before{background:#6E5BE8;}
+.grd_thm{background: #6E5BE8;}
+.c_thm{color:#6E5BE8 !important;}
+.bg_thm{background:#6E5BE8 !important;}
+.bd_thm{border-color:#6E5BE8 !important;}
+.obd_thm{border-color:rgba(64,102,238,0.3) !important;}
+.lds-ellipsis div{background:#6E5BE8;}
+.card_list .list_con .slide_dots li.slick-active button{background:#6E5BE8;}
+.card_list .list_con .slide_dots li.slick-active:last-child button{width:15px;height:15px;background:url('../img/m/ico_cp_on_pp.png') no-repeat;}
+.agr_all .chk:checked+.chk_label:after{background-color:#6E5BE8 !important;}
+.chk.sm:checked+.chk_label.sm:after{background:url('../img/m/ico_schecked_pp.png') no-repeat center center;}
+.password_input .number span::after{border-top: 1px solid #6E5BE8;}
+.password_input .number span.on::after {background:#6E5BE8;}
+.bx_tab li.on, .tab_cnt li.on{border-color:#6E5BE8 !important;}
+.bx_tab li.on a, .tab_cnt li.on a{color:#6E5BE8 !important;}
+.pg_current{color:#6E5BE8;}
+.chk.rd+.chk_label.rd:after{border:1px solid #6E5BE8;}
+.chk.rd:checked+.chk_label.rd:after{border:1px solid #6E5BE8;color:#6E5BE8;}
+.right_bar .nation a.on{background:#6E5BE8;}

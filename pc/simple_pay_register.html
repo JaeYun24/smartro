@@ -1,0 +1,161 @@
+<!doctype html >
+<html lang="ko" class="pg_simple">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="SmartroPAY" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>SmartroPAY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../font/SpoqaHanSansNeo.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	<div class="wrap infit">
+		<div class="wp_contents">
+			<!-- [s] header -->
+			<div id="header">
+				<h1><a href="index.html"><img src="../img/pc/logo.png" alt="SmartroPay"></a></h1>
+				<a href="javascript:history.back();" class="close"><img src="../img/pc/ico_close.png" alt="닫기"></a>
+			</div>
+			<!-- [e] header -->
+
+			<!-- [s] container -->
+			<section id="container">
+				<!-- [s] 카드등록 -->
+				<div class="card_info bx_cont card_register">
+					<div class="inner infit">
+						<h2>카드등록</h2>
+						<div class="card_img" style="background-image:url('../img/m/default_card.png');">
+							<div class="info">
+								<p class="number"><span>0000</span><span>0000</span><span>0000</span><span>0000</span></p>
+								<p class="date">MM/YY</p>
+							</div>
+						</div>
+						<ul class="info_form">
+							<li>
+								<label for="cardCat" >유형선택</label>	
+								<select name="cardCat" id="cardCat" class="select_basic">
+									<option value="개인">개인</option>
+									<option value="법인">법인</option>
+								</select>
+							</li>
+							<li>
+								<label for="cardNum" >카드번호</label>
+								<div class="frm w4 dash">
+									<div class="inp">
+										<input type="text" name="cardNum" id="cardNum_1" maxlength="4" placeholder="0000" >
+										<label for="cardNum_1" class="hidden">CARD NUMBER</label>
+									</div>
+									<div class="inp">
+										<input type="text" name="cardNum" id="cardNum_2" maxlength="4" placeholder="0000">
+										<label for="cardNum_2" class="hidden">CARD NUMBER</label>
+									</div>
+									<div class="inp">
+										<input type="text" name="cardNum" id="cardNum_3" maxlength="4" placeholder="0000">
+										<label for="cardNum_3" class="hidden">CARD NUMBER</label>
+									</div>
+									<div class="inp">
+										<input type="text" name="cardNum" id="cardNum_4" maxlength="4" placeholder="0000">
+										<label for="cardNum_4" class="hidden">CARD NUMBER</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label for="cardEsp" >유효기간</label>
+								<div class="frm w2 wd40 slush">
+									<div class="inp">
+										<input type="text" name="cardEsp" id="cardEsp_1"  maxlength="2" placeholder="MM" >
+										<label for="cardEsp_1" class="hidden">ESPIRATION</label>
+									</div>
+									<div class="inp">
+										<input type="text" name="cardEsp" id="cardEsp_2"  maxlength="2" placeholder="YY">
+										<label for="cardEsp_2" class="hidden">ESPIRATION</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label for="cardCvc" >CVC</label>
+								<input type="text" name="cardCvc" id="cardCvc"  maxlength="3" placeholder="뒷면 3자리 숫자" class="input_basic wd30">
+							</li>
+							<li>
+								<label for="cardPw" >카드 비밀번호</label>
+								<input type="password" name="cardPw" id="cardPw"  maxlength="2" placeholder="앞 2자리 숫자" class="input_basic wd20">
+							</li>
+							<li>
+								<label for="cardPw" >카드 별명(선택)</label>
+								<input type="password" name="cardPw" id="cardPw"  placeholder="00자 이내" class="input_basic">
+							</li>
+						</ul><!-- info_form -->
+					</div><!-- inner -->
+				</div>
+				<!-- [s] 카드등록 -->
+				<div class="btn_area mt10">
+					<div class="cs_ban">스마트로 고객센터 :  02-1666-9114 (평일 09:00~18:00)</div>
+					<a href="javascript:popupOpen('.layer_cancel');" class="btn_norm">취소</a>
+					<a href="simple_pay_register_on.html" class="btn_norm bg_thm">결제</a>
+				</div><!-- btn_area -->
+			</section>
+			<!-- [e] container -->
+
+			<!-- [s] layer -->
+			<div class="layer_wrap">
+				<!-- [s] 취소 팝업 -->
+				<div class="ly_content layer_cancel">
+					<div class="ly_cont">
+						<div class="layer norm_pop infit">
+							<div class="cont">
+								<p class="tt">결제를 취소하시겠습니까?</p>
+								<p class="st">결제취소 시 입력하신 정보가<br>모두 초기화됩니다.</p>
+							</div>
+							<div class="btn_area w2">
+								<a href="javascript:popupClose('.layer_cancel');" class="btn_pop">닫기</a>
+								<a href="index.html" class="btn_pop c_thm">확인</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [e] 취소 팝업-->
+
+				<div class="ly_dim"></div>
+			</div>
+			<!-- [e] layer -->
+
+		</div><!-- wp_contents -->
+
+		<!-- 광고배너 -->
+		<div class="right_bar">
+			<div class="adv_ban"></div>
+			<div class="nation"><a><img src="../img/pc/nat_kor.png" alt="한국"></a><a><img src="../img/pc/nat_usa.png" alt="미국"></a></div>
+		</div><!-- right_bar -->
+	</div><!-- wrap -->
+
+	<div class="wp_dim"></div>
+</div>
+<!-- [e] wrapper -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+<script type="text/javascript" src="../js/ticker.js"></script>
+
+</body>
+</html>

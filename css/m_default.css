@@ -1,0 +1,85 @@
+/*-------------------------------------------------------------------
+    파일정의 : 초기화 스타일
+    속성순서 : Display > Position > Box Model > Design > Paragraph
+
+-------------------------------------------------------------------*/
+
+/* 초기화 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, select, textarea,
+fieldset, form, label, legend, fieldset,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "Spoqa Han Sans Neo", sans-serif;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1;
+	list-style: none;
+	text-decoration: none;
+	border-collapse:collapse;
+}
+
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {text-decoration:none;color:#000;outline:0 !important;}
+a:link, a:visited{text-decoration:none}
+a:hover{text-decoration:none}ㅋ
+strong{font-weight:600;}
+div{outline:0 !important;}
+
+
+*, :after, :before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+img{vertical-align: middle;outline:0;}
+input,select,button,textarea{padding: 0;appearance:none;-webkit-appearance:none;-moz-appearance:none;outline:0 !important;font-family: "Spoqa Han Sans Neo", sans-serif;}
+button{border: 0;background: transparent;box-shadow: none;outline:0 !important;font-family: "Spoqa Han Sans Neo", sans-serif;}
+input[type="submit"], input[type="button"], input[type="reset"], button {cursor:pointer}
+select::-ms-expand {display: none;}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */ color:#C9C9C9;}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#C9C9C9;}
+input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#C9C9C9;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#C9C9C9;}
+
+
+/* library */
+.hidden{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: 0;font-size: 0;line-height: 0;clip: rect(0,0,0,0)}
+.shidden{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: 0;font-size: 0;line-height: 0;clip: rect(0,0,0,0)}
+.lt{float:left}
+.rt{float:right}
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+.taj{text-align:justify !important}
+.vam{vertical-align:middle !important}
+.vat{vertical-align:top !important}
+.vab{vertical-align:bottom !important}
+.clear{clear:both;}
+.mt0{margin-top:0 !important;}
+.mt10{margin-top:1vw !important;}
+.mt15{margin-top:1.5vw !important;}
+.mt20{margin-top:2vw !important;}
+.mt25{margin-top:2.5vw !important;}
+.mt30{margin-top:3vw !important;}
+.mt35{margin-top:3.5vw !important;}
+.mt40{margin-top:4vw !important;}
+.mt45{margin-top:4.5vw !important;}
+.mt50{margin-top:5vw !important;}
+.mt55{margin-top:5.5vw !important;}
+.mt60{margin-top:6vw !important;}
+.mt65{margin-top:6.5vw !important;}
+.mt70{margin-top:7vw !important;}
+.mt75{margin-top:7.5vw !important;}
+.mt80{margin-top:8vw !important;}
+.mt85{margin-top:8.5vw !important;}
